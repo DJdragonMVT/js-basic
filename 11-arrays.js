@@ -56,5 +56,17 @@ var juguetes = ["muñeca","carro","balon",1,"tractor",6,"lego",true,3];
 var recorte = juguetes.slice(0,3);
 console.log(recorte);
 
+//COMO CREO UNA COPIA.
+//Forma viejita
+var juguetes = ["Muñeca", "Carro", "Balón", 1 , "Tractor", 6, "LEGO"];
+var copiaJuguetes = juguetes.slice();
+copiaJuguetes.reverse();
+console.log(juguetes);
+console.log(copiaJuguetes);
 
+var juguetes = ["Muñeca", "Carro", "Balón", "Tractor"];
+var copiaJuguetes = ["SOY UN ELEMENTO", ...juguetes, "estoy al final"];
+//Spread operator
+console.log(juguetes);
+console.log(copiaJuguetes);
 
