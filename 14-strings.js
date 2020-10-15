@@ -1,4 +1,4 @@
-  
+
 var miNombre = "Javier Collazos";
 
 //Existen 2 funciones: 
@@ -23,12 +23,12 @@ var miNombre = "Javier";
 var parteDeMiNombre = miNombre.charAt(1) + miNombre.charAt(2) + miNombre.charAt(3);
 
 //La otra forma
-parteDeMiNombre = miNombre.substr(3,50);
+parteDeMiNombre = miNombre.substr(3, 50);
 parteDeMiNombre = miNombre.substr(50);
 
 //AMBAS FUNCIONAN DISTINTO
 parteDeMiNombre = miNombre.slice(3);
-parteDeMiNombre = miNombre.slice(3, (3+50));
+parteDeMiNombre = miNombre.slice(3, (3 + 50));
 console.log(parteDeMiNombre);
 
 //
@@ -39,9 +39,30 @@ console.log(primeraLetraMayus);
 //Santiago
 
 //Primero la ultima letra en mayúscula // santiagO
+var miNombre = "santiago";
+var ultimaLetraMayus = miNombre.substring(0, 7) + miNombre.charAt(7).toUpperCase();
+
+console.log(ultimaLetraMayus);
+
 
 //Segundo ejercicio
 
 var miNombre = "javier andres collazos gómez";
+var miNombreDividido = miNombre.split(" ");
+
+console.log(miNombreDividido);
+
+var miNombreFinal = "";
+
+for (var i = 0 ; i < miNombreDividido.length ; i++) {
+    var miNombreMayus = [miNombreDividido[i].charAt(0).toUpperCase() + miNombreDividido[i].substring(1)];
+    miNombreFinal = miNombreMayus + miNombreFinal + " ";
+}
+
+console.log(miNombreFinal);
+
 //Javier Andres Collazos Gómez
 //split
+
+
+
